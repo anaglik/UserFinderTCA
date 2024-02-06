@@ -5,4 +5,4 @@ App has search functionality and displays user's details. These details are cach
 
 
 
-
+![Screenshot](resources/screenshot.png)
