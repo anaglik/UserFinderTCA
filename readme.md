@@ -4,4 +4,4 @@ It is small app. The purpose of it is to simply try and learn how to use TCA.
 App has search functionality and displays user's details. These details are cached using CoreData (yes, it is overkill for cache)
 
 
-<img src="resources/screenshot.png" width="200" height="auto">
+<img src="resources/screen1.png" width="200" height="auto">
