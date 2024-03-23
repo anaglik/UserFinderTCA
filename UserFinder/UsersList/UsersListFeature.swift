@@ -11,7 +11,7 @@ struct UsersListFeature {
         var isSearchErrorPresented = false
         var isEmptySearchPresented = false
         var searchResult: [SearchItem] = []
-        var recentsResult: [UserEntity] = []
+        var recentsResult: [User] = []
         var path = StackState<UserDetailsFeature.State>()
     }
     
@@ -20,7 +20,7 @@ struct UsersListFeature {
         case searchQueryChanged(String)
         case searchPresentationChanged(Bool)
         case searchResponse([SearchItem])
-        case recentsResponse([UserEntity])
+        case recentsResponse([User])
         case searchErrorPresentationChanged(Bool)
         case path(StackAction<UserDetailsFeature.State, UserDetailsFeature.Action>)
     }

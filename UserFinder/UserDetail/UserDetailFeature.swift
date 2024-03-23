@@ -6,7 +6,7 @@ struct UserDetailsFeature {
     @ObservableState
     struct State: Equatable {
         let login: String
-        var user: UserEntity?
+        var user: User?
         var isErrorPresented: Bool = false
         
         var userAttributes: [UserAttribute] {
@@ -19,7 +19,7 @@ struct UserDetailsFeature {
     }
     enum Action {
         case fetchUserDetails
-        case fetchResponse(UserEntity)
+        case fetchResponse(User)
         case searchErrorPresentationChanged(Bool)
     }
     

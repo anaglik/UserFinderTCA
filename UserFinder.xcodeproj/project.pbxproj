@@ -19,14 +19,12 @@
 		A1CE043F2B628E57009BC29C /* UserFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE043E2B628E57009BC29C /* UserFinderApp.swift */; };
 		A1CE04432B628E58009BC29C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CE04422B628E58009BC29C /* Assets.xcassets */; };
 		A1CE04462B628E58009BC29C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CE04452B628E58009BC29C /* Preview Assets.xcassets */; };
-		A1CE04482B628E58009BC29C /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE04472B628E58009BC29C /* PersistenceController.swift */; };
-		A1CE044B2B628E58009BC29C /* UserFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1CE04492B628E58009BC29C /* UserFinder.xcdatamodeld */; };
 		A1CE046E2B628EC4009BC29C /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE046D2B628EC4009BC29C /* UsersListView.swift */; };
 		A1CE04712B628F66009BC29C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A1CE04702B628F66009BC29C /* ComposableArchitecture */; };
 		A1CE04732B628F85009BC29C /* UsersListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE04722B628F85009BC29C /* UsersListFeature.swift */; };
 		A1D853602B6BB8B400BEBAFE /* GithubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D8535F2B6BB8B400BEBAFE /* GithubClient.swift */; };
-		A1D8536B2B6BC6BB00BEBAFE /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D8536A2B6BC6BB00BEBAFE /* UserEntity.swift */; };
 		A1D8536D2B6BCE1E00BEBAFE /* UsersFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D8536C2B6BCE1E00BEBAFE /* UsersFetcher.swift */; };
+		A1E208A02BAF195000907B20 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2089F2BAF195000907B20 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,14 +51,12 @@
 		A1CE043E2B628E57009BC29C /* UserFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFinderApp.swift; sourceTree = "<group>"; };
 		A1CE04422B628E58009BC29C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1CE04452B628E58009BC29C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A1CE04472B628E58009BC29C /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		A1CE044A2B628E58009BC29C /* UserFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserFinder.xcdatamodel; sourceTree = "<group>"; };
 		A1CE04502B628E58009BC29C /* UserFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CE046D2B628EC4009BC29C /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		A1CE04722B628F85009BC29C /* UsersListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListFeature.swift; sourceTree = "<group>"; };
 		A1D8535F2B6BB8B400BEBAFE /* GithubClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubClient.swift; sourceTree = "<group>"; };
-		A1D8536A2B6BC6BB00BEBAFE /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		A1D8536C2B6BCE1E00BEBAFE /* UsersFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersFetcher.swift; sourceTree = "<group>"; };
+		A1E2089F2BAF195000907B20 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +93,7 @@
 			children = (
 				A19BAFBA2B63F04B00D98769 /* SearchItem.swift */,
 				A19E13E82B6A890B00D48FE8 /* NetworkUser.swift */,
+				A1E2089F2BAF195000907B20 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -126,11 +123,9 @@
 				A1CE04742B628F89009BC29C /* UsersList */,
 				A19BAFB92B63F02D00D98769 /* Model */,
 				A1D8535E2B6BB89F00BEBAFE /* Dependencies */,
-				A1D853692B6BC6A000BEBAFE /* CoreDataStack */,
 				A19BAFB22B63E94800D98769 /* AppView.swift */,
 				A1CE043E2B628E57009BC29C /* UserFinderApp.swift */,
 				A1CE04422B628E58009BC29C /* Assets.xcassets */,
-				A1CE04492B628E58009BC29C /* UserFinder.xcdatamodeld */,
 				A1CE04442B628E58009BC29C /* Preview Content */,
 			);
 			path = UserFinder;
@@ -170,15 +165,6 @@
 				A1D8536C2B6BCE1E00BEBAFE /* UsersFetcher.swift */,
 			);
 			path = Dependencies;
-			sourceTree = "<group>";
-		};
-		A1D853692B6BC6A000BEBAFE /* CoreDataStack */ = {
-			isa = PBXGroup;
-			children = (
-				A1CE04472B628E58009BC29C /* PersistenceController.swift */,
-				A1D8536A2B6BC6BB00BEBAFE /* UserEntity.swift */,
-			);
-			path = CoreDataStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,15 +274,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A19E13E92B6A890B00D48FE8 /* NetworkUser.swift in Sources */,
-				A1CE04482B628E58009BC29C /* PersistenceController.swift in Sources */,
 				A1007B9A2B63D0E100313CEC /* UserListItemView.swift in Sources */,
 				A1D8536D2B6BCE1E00BEBAFE /* UsersFetcher.swift in Sources */,
 				A1CE04732B628F85009BC29C /* UsersListFeature.swift in Sources */,
 				A19BAFB62B63EA4200D98769 /* UserDetailView.swift in Sources */,
 				A19BAFB32B63E94800D98769 /* AppView.swift in Sources */,
-				A1D8536B2B6BC6BB00BEBAFE /* UserEntity.swift in Sources */,
+				A1E208A02BAF195000907B20 /* User.swift in Sources */,
 				A19BAFB82B63F00200D98769 /* UsersStore.swift in Sources */,
-				A1CE044B2B628E58009BC29C /* UserFinder.xcdatamodeld in Sources */,
 				A1114E052B6A69FC0018EB55 /* UserDetailFeature.swift in Sources */,
 				A19E13EB2B6A8E4800D48FE8 /* UserDetailsHeader.swift in Sources */,
 				A1CE043F2B628E57009BC29C /* UserFinderApp.swift in Sources */,
@@ -588,19 +572,6 @@
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		A1CE04492B628E58009BC29C /* UserFinder.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A1CE044A2B628E58009BC29C /* UserFinder.xcdatamodel */,
-			);
-			currentVersion = A1CE044A2B628E58009BC29C /* UserFinder.xcdatamodel */;
-			path = UserFinder.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A1CE04332B628E57009BC29C /* Project object */;
 }
