@@ -24,7 +24,7 @@ struct UserDetailView: View {
     }
     
     @ViewBuilder
-    private func userDetailView(for user: UserEntity) -> some View {
+    private func userDetailView(for user: User) -> some View {
         List {
             Section {
                 ForEach(store.userAttributes, id: \.attributeName) { attribute in
