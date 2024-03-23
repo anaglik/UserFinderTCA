@@ -25,25 +25,20 @@ struct UserDetailView: View {
     
     @ViewBuilder
     private func userDetailView(for user: UserEntity) -> some View {
-        GeometryReader { geometry in
-            List {
-                Section {
-                    ForEach(store.userAttributes, id: \.attributeName) { attribute in
-                        HStack {
-                            Text(attribute.attributeName)
-                                .font(.headline)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                            Text(attribute.attributeValue)
-                                .font(.body)
-                        }
+        List {
+            Section {
+                ForEach(store.userAttributes, id: \.attributeName) { attribute in
+                    HStack {
+                        Text(attribute.attributeName)
+                            .font(.headline)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        Text(attribute.attributeValue)
+                            .font(.body)
                     }
-                } header: {
-                    let headerHeight = geometry.size.width - (2 * 16) // margins
-                    VStack {
-                        UserDetailsHeader(imageURL: user.avatarURL, name: user.name, minHeight: headerHeight)
-                    }
-                    .padding(.bottom, 10)
                 }
+            } header: {
+                UserDetailsHeader(imageURL: user.avatarURL, name: user.name)
+                    .padding(.bottom, 10)
             }
         }
     }

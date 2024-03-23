@@ -3,19 +3,21 @@ import SwiftUI
 struct UserDetailsHeader: View {
     let imageURL: URL
     let name: String
-    let minHeight: CGFloat
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            AsyncImage(url: imageURL) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-            } placeholder: {
-                ProgressView()
-            }
-            .frame(minHeight: minHeight)
-            
+            Color
+                .clear
+                .aspectRatio(1.0, contentMode: .fill)
+                .overlay {
+                    AsyncImage(url: imageURL) { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                    } placeholder: {
+                        ProgressView()
+                    }
+                }
             HStack {
                 Text(name)
                     .font(.headline)
@@ -32,5 +34,5 @@ struct UserDetailsHeader: View {
 
 #Preview {
     UserDetailsHeader(imageURL: URL(string: "https://avatars.githubusercontent.com/u/583231?v=4")!,
-                      name: "The Octocat", minHeight: 320)
+                      name: "The Octocat")
 }
