@@ -576,7 +576,7 @@
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.7.1;
+				minimumVersion = 1.9.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
